@@ -67,7 +67,5 @@ jobs:
           projectBaseDir: .
     steps:
       - name: "[SonarCloud YML] Prueba con secretos & variables de entorno"
-      run: |
-          echo "SONAR_TOKEN : $SONAR_TOKEN"
-          echo "GITHUB_TOKEN : $GITHUB_TOKEN"
+      run: echo "SONAR_TOKEN : $SONAR_TOKEN"
 
