@@ -41,9 +41,8 @@ permissions:
 jobs:
   Analysis:
     runs-on: ubuntu-latest
-
     steps:
-      - name: "Analizar con sonarcloud"
+      - name: Analizar con sonarcloud
 
         # You can pin the exact commit or the version.
         # uses: SonarSource/sonarcloud-github-action@v2.2.0
