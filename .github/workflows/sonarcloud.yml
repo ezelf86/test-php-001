@@ -41,6 +41,7 @@ permissions:
 jobs:
   Analysis:
     runs-on: ubuntu-latest
+
     steps:
       - name: Analizar con sonarcloud
 
@@ -64,10 +65,9 @@ jobs:
             #-Dsonar.verbose= # optional, default is false
             # When you need the analysis to take place in a directory other than the one from which it was launched, default is .
           projectBaseDir: .
-
-      steps:
-        - name: "[SonarCloud YML] Prueba con secretos & variables de entorno"
-        run: |
+    steps:
+      - name: "[SonarCloud YML] Prueba con secretos & variables de entorno"
+      run: |
           echo "SONAR_TOKEN : $SONAR_TOKEN"
           echo "GITHUB_TOKEN : $GITHUB_TOKEN"
 
